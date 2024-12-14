@@ -1,0 +1,41 @@
+nav {
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > div:first-of-type {
+    color: var(--primary-color);
+    font-size: var(--brand);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+nav > div:first-of-type > img {
+    width: 3rem;
+    height: auto;
+}
+nav > div:last-of-type {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+nav button {
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--primary-color);
+    background-color: rgba(121, 121, 121, 0.12);
+    color: var(--color3);
+    font-size: var(--p3);
+    cursor: pointer;
+}
+nav button:hover {
+    opacity: .8;
+}
+nav i {
+    line-height: 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
