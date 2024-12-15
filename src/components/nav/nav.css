@@ -5,6 +5,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 nav > div:first-of-type {
     color: var(--primary-color);
@@ -38,4 +39,16 @@ nav i {
     line-height: 0;
     font-size: 1.4rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+    nav {
+        padding: 1rem;
+    }
+    nav button {
+        padding: .3rem .85rem;
+    }
+    nav i {
+        font-size: 1.4rem;
+    }
 }
