@@ -2,7 +2,7 @@ import { Roboto, Roboto_Flex } from 'next/font/google';
 
 export const robotoFlex = Roboto_Flex({
     subsets: ["latin"],
-    weight: "200",
+    weight: ["200", "600"]
 });
 
 export const roboto = Roboto({
