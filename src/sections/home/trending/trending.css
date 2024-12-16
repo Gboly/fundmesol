@@ -1,0 +1,45 @@
+.trending {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.trending > div:first-of-type {
+    margin-top: 2.8rem;
+    width: 100%;
+    max-width: 58rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trending > div:first-of-type span {
+    font-size: var(--h4);
+    font-weight: 600;
+}
+.trending > div:first-of-type > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.trending > div:first-of-type > div > i {
+    font-size: 1.4rem;
+    line-height: 0;
+    color: var(--primary-color);
+}
+.trending > div:last-of-type {
+    width: 100%;
+    max-width: 58rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 2rem;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
+}
+.trending > div:last-of-type::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}

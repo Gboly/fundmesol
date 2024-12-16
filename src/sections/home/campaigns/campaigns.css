@@ -1,0 +1,67 @@
+.campaigns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.campaigns > div:first-of-type {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 58rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.campaigns > div:first-of-type span {
+    font-size: var(--h4);
+    font-weight: 600;
+}
+.campaigns > div:first-of-type > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.campaigns > div:first-of-type > div > i {
+    font-size: 1.4rem;
+    /* opacity: .6; */
+    margin-right: .2rem;
+    color: var(--primary-color);
+}
+.campaigns > div:first-of-type > div > button {
+    padding: .5rem 0;
+    width: 5.5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light);
+    font-size: var(--p3);
+    cursor: pointer;
+}
+.campaigns > div:first-of-type > div > button:hover {
+    opacity: .85;
+}
+.campaigns > div:first-of-type > div > button:first-of-type {
+    background-color: var(--bg-color);
+    /* color: var(--primary-color); */
+    color: var(--color);
+    border: 1px solid var(--primary-color);
+    width: 4.5rem;
+}
+.campaigns > div:first-of-type > div > button:first-of-type:hover {
+    opacity: .75;
+}
+.campaigns > div:last-of-type {
+    width: 100%;
+    max-width: 58rem;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+.campaigns .campaign-card {
+    margin-bottom: 1.5rem;
+}
