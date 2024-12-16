@@ -10,7 +10,8 @@
   --h3: 2rem;
   --h4: 1.5rem;
   --p1: 1rem;
-  --p3: 0.85rem
+  --p3: 0.85rem;
+  --p5: 0.7rem;
 }
 
 [data-theme = "light"] {
@@ -18,6 +19,7 @@
   --color: var(--dark);
   --for-light: inline-block;
   --for-dark: none;
+  --faded: rgba(121, 121, 121, .15);
 }
 
 [data-theme = "dark"] {
@@ -25,6 +27,7 @@
   --color: var(--light);
   --for-light: none;
   --for-dark: inline-block;
+  --faded: rgba(121, 121, 121, .3);
 }
 
 html,
