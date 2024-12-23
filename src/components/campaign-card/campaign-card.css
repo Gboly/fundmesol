@@ -26,13 +26,13 @@
     font-size: var(--p1);
     font-weight: 600;
     height: 3rem;
+    margin-bottom: 1.3rem;
 }
-.campaign-card > div > p:last-of-type {
+/* .campaign-card > div > p:last-of-type {
     font-size: var(--p5);
     margin: .3rem 0 1rem;
     opacity: .8;
-    /* margin-top: 9rem; */
-}
+} */
 .campaign-card > div > div:first-of-type {
     display: flex;
     justify-content: space-between;

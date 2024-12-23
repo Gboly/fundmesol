@@ -23,7 +23,7 @@ const CampaignCard = ({pos, ref}:props ) => {
             <p>{test[pos]}</p>
             {/* address should be a link that takes you to a user tx history page - Campaigns and donations */}
             {/* <p>By 0x476dhsg37248738dsbgb43</p> */}
-            <p></p>
+            {/* <p></p> */}
             <Progress variant="determinate" value={20} />
             <div>
                 <span>0.65sol raised</span>
@@ -39,7 +39,7 @@ const CampaignCard = ({pos, ref}:props ) => {
 }
 
 const Progress = styled(LinearProgress)(() => ({
-    height: 6,
+    height: 5,
     borderRadius: 5,
     [`&.${linearProgressClasses.colorPrimary}`]: {
       backgroundColor: ifDarkMode() ? "#121212" : "#f4f8ff",
