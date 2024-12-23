@@ -28,7 +28,7 @@
     line-height: 0;
     color: var(--primary-color);
 }
-.trending > div:last-of-type {
+.cards {
     width: 100%;
     max-width: 58rem;
     display: flex;
@@ -40,6 +40,19 @@
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;     /* Firefox */
 }
-.trending > div:last-of-type::-webkit-scrollbar {
+.cards::-webkit-scrollbar {
     display: none;  /* Chrome, Safari, Opera */
+}
+.trending > div:last-of-type {
+    width: 100%;
+    max-width: 58rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 560px) {
+    .trending > div:last-of-type {
+        margin-top: 1rem;
+    }
 }
