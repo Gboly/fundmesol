@@ -4,11 +4,13 @@ import React from 'react'
 import "./icon.css"
 
 interface props {
-    icon: OverridableComponent<SvgIconTypeMap<object, "svg">> & {muiName: string};
+    icon: OverridableComponent<SvgIconTypeMap<object, "svg">> & {muiName: string},
+    onClick?: () => void,
+    disabled?: boolean
 }
-const Icon = ({icon: Icon}: props) => {
+const Icon = ({icon: Icon, onClick, disabled}: props) => {
   return (
-    <i className='icon'>
+    <i className={`icon ${disabled ? "disabled" : ""}`} onClick={onClick} >
         <Icon style={{ color: "inherit", fontSize: "inherit" }} />
     </i>
   )
