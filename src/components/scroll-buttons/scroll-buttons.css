@@ -1,0 +1,12 @@
+.scroll-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.scroll-buttons .icon:last-of-type {
+    transform: rotate(180deg);
+}
+.scroll-buttons .icon {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
