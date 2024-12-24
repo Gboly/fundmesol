@@ -3,11 +3,12 @@ import React, { useRef, useState } from 'react'
 import "./trending.css"
 import FilterListIcon from '@mui/icons-material/FilterList';
 import Select from '@/components/select/Select';
-import { ArrayOfStrings } from '@/app/types';
+import { ArrayOfStrings} from '@/app/types';
 import { robotoFlex } from '@/app/fonts';
 import CampaignCard from '@/components/campaign-card/CampaignCard';
 import Icon from '@/components/icon/Icon';
 import ScrollButtons from '@/components/scroll-buttons/ScrollButtons';
+import { campaignsData } from '@/utils/dummydata';
 
 const trendingTimeIntervals: ArrayOfStrings = ["24h", "12h", "6h", "1h", "30m", 
 "10m", "5m" ]
@@ -23,8 +24,8 @@ const Trending = () => {
 
   const [{prevIsDisabled, nextIsDisabled}, setCanClickToScroll] = useState<canScrollState>({prevIsDisabled: true, nextIsDisabled: false})
 
-  const cardsData: Array<number> = [0, 1, 2, 2, 1, 0, 2, 1]
-
+  // Since the actual fetched trending campaign's data would include more fields but the type uses just specific fields. They need to be extracted by mapping and returning just these fields.
+  const trendingData = campaignsData
   const getContainerWidth: ()=> number = ()=> cardsContainerRef.current?.offsetWidth || 0
   const getCardWidth: ()=> number = ()=> cardRef.current?.offsetWidth || 0
 
@@ -46,10 +47,10 @@ const Trending = () => {
           </div>
         </div>
         <div className='cards' ref={cardsContainerRef} onScroll={checkCanClickToScroll}>
-            {cardsData.map((card, index) => <CampaignCard key={index} pos={card} ref={cardRef}/>)}
+            {trendingData.map(({id, ...card}) => <CampaignCard key={id} ref={cardRef} {...{id, ...card}}/>)}
         </div>
         <div>
-          <ScrollButtons {...{ref:cardsContainerRef, getCardWidth, getContainerWidth, cardsTotal: cardsData.length, prevIsDisabled, nextIsDisabled}} />
+          <ScrollButtons {...{ref:cardsContainerRef, getCardWidth, getContainerWidth, cardsTotal: trendingData.length, prevIsDisabled, nextIsDisabled}} />
         </div>
       </section>
   )
