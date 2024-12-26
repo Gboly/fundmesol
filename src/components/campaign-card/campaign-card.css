@@ -60,14 +60,13 @@
 .campaign-card > div > div:last-of-type > button:last-of-type {
     flex: 20%;
     background-color: var(--bg-color);
-    color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
 .campaign-card > div > div:last-of-type > button:last-of-type:hover {
     opacity: .7;
 }
-.campaign-card > div > div:last-of-type > button > i {
-    font-size: .8rem;
+.campaign-card > div > div:last-of-type > button > .fa-icon-custom {
+    color: var(--primary-color);
 }
 
 @media screen and (max-width: 960px) {

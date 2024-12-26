@@ -4,10 +4,10 @@ import { LinearProgress, linearProgressClasses, styled } from '@mui/material';
 import Image from 'next/image'
 import React, { Ref } from 'react'
 import "./campaign-card.css"
-import Icon from '../icon/Icon';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { ifDarkMode } from '@/utils/helpers';
 import { cardDetails } from '@/app/types';
+import FaIcon from '../fa-icon/FaIcon';
+import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 interface props {
   ref?: Ref<HTMLElement>
@@ -17,20 +17,17 @@ const CampaignCard = ({ref, image, title, solTarget, solRaised, deadline}: props
   return (
     <article className='campaign-card' ref={ref}>
       {/* For the width and height properties, you have to use the actual image dimensions for the image to be displayed in its best qaulity. This should be gotten during upload in the create campaign component */}
-        <Image alt='campaign banner' src={image} width={1640} height={924}/>
+          <Image alt='campaign banner' src={image} width={1640} height={924}/>
         <div>
             <p>{title}</p>
-            {/* address should be a link that takes you to a user tx history page - Campaigns and donations */}
-            {/* <p>By 0x476dhsg37248738dsbgb43</p> */}
-            {/* <p></p> */}
             <Progress variant="determinate" value={(solRaised/solTarget) * 100} />
             <div>
-                <span>{`${solRaised}sol raised`}</span>
+                <span>{`${solRaised}/${solTarget}sol`}</span>
                 <span>{deadline && `Ends in ${deadline}`}</span>
             </div>
             <div>
-              <button>Support</button>
-              <button><Icon icon={ContentCopyIcon} /></button>
+              <button>Fund</button>
+              <button><FaIcon icon={faArrowUpFromBracket} /></button>
             </div>
         </div>
     </article>
