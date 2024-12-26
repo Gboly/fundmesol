@@ -8,17 +8,10 @@ nav {
     position: fixed;
     z-index: 100;
 }
-nav > div:first-of-type {
-    color: var(--primary-color);
-    font-size: var(--brand);
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-nav > div:first-of-type > img {
+/* nav > div:first-of-type > img {
     width: 3rem;
     height: auto;
-}
+} */
 nav > div:last-of-type {
     display: flex;
     gap: 1rem;

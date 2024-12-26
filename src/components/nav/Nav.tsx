@@ -1,18 +1,12 @@
 "use client";
 
-import { Economica } from "next/font/google";
 //import { useState } from "react";
 //import Navbar from "../navbar/Navbar";
 import "./nav.css";
-//import { philosopherFont } from "@/app/fonts";
 import MenuIcon from "@mui/icons-material/Menu";
 import Icon from "../icon/Icon";
-//import Image from "next/image";
+import Brand from "../brand/Brand";
 
-export const economica = Economica({
-  subsets: ["latin"],
-  weight: "700",
-});
 
 const Nav = () => {
   //const [barIsOpen, setBarIsOpen] = useState(false);
@@ -23,9 +17,7 @@ const Nav = () => {
   return (
     <>
       <nav>
-        <div className={economica.className}>
-          <span>fundmesol</span>
-        </div>
+        <Brand />
         <div>
           <button>Connect wallet</button>
           <Icon icon={MenuIcon} />
