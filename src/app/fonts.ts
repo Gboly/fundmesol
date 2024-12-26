@@ -1,4 +1,4 @@
-import { Roboto, Roboto_Flex } from 'next/font/google';
+import { Economica, Roboto, Roboto_Flex } from 'next/font/google';
 
 export const robotoFlex = Roboto_Flex({
     subsets: ["latin"],
@@ -8,4 +8,9 @@ export const robotoFlex = Roboto_Flex({
 export const roboto = Roboto({
     subsets: ["latin"],
     weight: "400",
+});
+
+export const economica = Economica({
+    subsets: ["latin"],
+    weight: "700",
 });
