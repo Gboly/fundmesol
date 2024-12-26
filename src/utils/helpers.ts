@@ -8,3 +8,7 @@ type getAttributeFxn = () => string | undefined | null
 export const getTheme: getAttributeFxn = () => document.querySelector("html")?.getAttribute("data-theme")
 export const ifDarkMode: () => boolean = () => getTheme() === "dark"
 export const ifLightMode: () => boolean = () => getTheme() === "light"
+export function isEmail(value: string) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return typeof value === 'string' && emailRegex.test(value);
+}
