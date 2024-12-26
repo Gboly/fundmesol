@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/nav/Nav";
 import { roboto } from "./fonts";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

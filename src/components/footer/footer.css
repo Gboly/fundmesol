@@ -1,0 +1,97 @@
+.footer {
+    width: 100%;
+    background: hsla(267, 100%, 64%, 0.15);
+    margin-top: 7rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 5rem 3rem 1rem;
+    position: relative;
+}
+.footer > aside {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 1rem 1rem;
+}
+.footer > aside > input {
+    width: 14rem;
+    border: none;
+    background-color: transparent;
+    padding: 1rem 2rem 1rem 1rem;
+}
+.footer > aside > input:focus {
+    outline: none;
+}
+.footer > aside > .icon {
+    transform: rotate(180deg);
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.footer > div:first-of-type {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* .footer .brand {
+    transform: scale(1.1);
+} */
+ .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+ .fa-icon-round-bg {
+    width: 1.8rem;
+    height: 1.65rem;
+    border-radius: .35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.fa-icon-round-bg.instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+  }
+.fa-icon-round-bg.x {
+    background-color: #000; /* X Blue */
+  }
+.fa-icon-round-bg.discord {
+    background-color: #5865F2; /* Discord Blurple */
+  }
+.footer .links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: var(--p3);
+}
+.footer .links > div:last-of-type {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+.thin-line {
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 58rem;
+    height: .05rem;
+    border-radius: 1rem;
+    background-color: var(--bg-color);
+    margin-bottom: .5rem;
+}
+.footer > div:last-of-type {
+    font-size: var(--p3);
+    opacity: .8;
+}
+
+@media screen and (max-width: 720px) {
+    .footer {
+        padding: 5rem 1rem 1rem;
+    }
+}
