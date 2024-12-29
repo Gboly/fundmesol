@@ -7,9 +7,11 @@
   --brand: 2rem;
   --h1: 3rem;
   --h2: 2.5rem;
+  --h2-5: 2.3rem;
   --h3: 2rem;
   --h4: 1.5rem;
   --p1: 1rem;
+  --p2: .92rem;
   --p3: 0.85rem;
   --p5: 0.7rem;
 }
@@ -63,6 +65,15 @@ a {
 .disabled {
   pointer-events: none;
   opacity: .3;
+}
+.thin-line {
+    width: 100%;
+    max-width: 58rem;
+    height: .05rem;
+    border-radius: 1rem;
+    background-color: var(--bg-color);
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
