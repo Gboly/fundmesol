@@ -1,3 +1,10 @@
 .icon {
     line-height: 0;
 }
+.icon-hover {
+    padding: .5rem;
+}
+.icon-hover:hover {
+    border-radius: 50%;
+    background-color: var(--faded);
+}

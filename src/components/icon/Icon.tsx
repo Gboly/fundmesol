@@ -6,11 +6,11 @@ import "./icon.css"
 interface props {
     icon: OverridableComponent<SvgIconTypeMap<object, "svg">> & {muiName: string},
     onClick?: () => void,
-    disabled?: boolean
+    disabled?: boolean,
 }
 const Icon = ({icon: Icon, onClick, disabled}: props) => {
   return (
-    <i className={`icon ${disabled ? "disabled" : ""}`} onClick={onClick} >
+    <i className={`icon ${onClick ? "icon-hover" : "" } ${disabled ? "disabled" : ""}`} onClick={onClick} >
         <Icon style={{ color: "inherit", fontSize: "inherit" }} />
     </i>
   )
