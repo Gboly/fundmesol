@@ -1,0 +1,22 @@
+.cards {
+    width: 100%;
+    max-width: 58rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 2rem;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
+}
+.cards::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+.scroll-buttons-container {
+    width: 100%;
+    max-width: 58rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
