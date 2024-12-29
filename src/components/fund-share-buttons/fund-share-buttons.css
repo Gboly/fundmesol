@@ -1,0 +1,31 @@
+.fund-share-buttons {
+    display: flex;
+    gap: .3rem;
+}
+.fund-share-buttons > button {
+    flex: 80%;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--light);
+    font-size: var(--p3);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fund-share-buttons > button:hover {
+    opacity: .85;
+}
+.fund-share-buttons > button:last-of-type {
+    flex: 20%;
+    background-color: var(--bg-color);
+    border: 1px solid var(--primary-color);
+}
+.fund-share-buttons > button:last-of-type:hover {
+    opacity: .7;
+}
+.fund-share-buttons > button > .fa-icon-custom {
+    color: var(--primary-color);
+}
