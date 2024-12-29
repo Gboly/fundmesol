@@ -1,0 +1,23 @@
+.title-filter {
+    margin-top: 2.8rem;
+    width: 100%;
+    max-width: 58rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-filter span {
+    font-size: var(--h4);
+    font-weight: 600;
+}
+.title-filter > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.title-filter > div > i {
+    font-size: 1.4rem;
+    line-height: 0;
+    color: var(--primary-color);
+}
