@@ -1,7 +1,7 @@
 .scroll-buttons {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
 }
 .scroll-buttons .icon:last-of-type {
     transform: rotate(180deg);
