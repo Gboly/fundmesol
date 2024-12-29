@@ -76,14 +76,8 @@
     align-items: center;
     gap: .8rem;
 }
-.thin-line {
-    margin-top: 3rem;
-    width: 100%;
-    max-width: 58rem;
-    height: .05rem;
-    border-radius: 1rem;
-    background-color: var(--bg-color);
-    margin-bottom: .5rem;
+.footer .thin-line {
+    margin-top: 3rem;    
 }
 .footer > div:last-of-type {
     font-size: var(--p3);
