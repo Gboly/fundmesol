@@ -39,35 +39,10 @@
     margin-top: .3rem;
     font-size: var(--p3);
 }
-.campaign-card > div > div:last-of-type {
+.campaign-card > div > .fund-share-buttons {
     margin-top: 1.5rem;
-    display: flex;
-    gap: .3rem;
 }
-.campaign-card > div > div:last-of-type > button {
-    flex: 80%;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--light);
-    font-size: var(--p3);
-    cursor: pointer;
-}
-.campaign-card > div > div:last-of-type > button:hover {
-    opacity: .85;
-}
-.campaign-card > div > div:last-of-type > button:last-of-type {
-    flex: 20%;
-    background-color: var(--bg-color);
-    border: 1px solid var(--primary-color);
-}
-.campaign-card > div > div:last-of-type > button:last-of-type:hover {
-    opacity: .7;
-}
-.campaign-card > div > div:last-of-type > button > .fa-icon-custom {
-    color: var(--primary-color);
-}
+
 
 @media screen and (max-width: 960px) {
     .campaign-card > div {
@@ -79,7 +54,7 @@
     .campaign-card > div > p:first-of-type {
         height: 2.4rem;
     }
-    .campaign-card > div > div:last-of-type {
+    .campaign-card > div > .fund-share-buttons {
         margin-top: 1.2rem;
     }
 }

@@ -6,8 +6,7 @@ import React, { Ref } from 'react'
 import "./campaign-card.css"
 import { ifDarkMode } from '@/utils/helpers';
 import { cardDetails } from '@/app/types';
-import FaIcon from '../fa-icon/FaIcon';
-import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
+import FundShareButtons from '../fund-share-buttons/FundShareButtons';
 
 interface props {
   ref?: Ref<HTMLElement>
@@ -25,10 +24,7 @@ const CampaignCard = ({ref, image, title, solTarget, solRaised, deadline}: props
                 <span>{`${solRaised}/${solTarget}sol`}</span>
                 <span>{deadline && `Ends in ${deadline}`}</span>
             </div>
-            <div>
-              <button>Fund</button>
-              <button><FaIcon icon={faArrowUpFromBracket} /></button>
-            </div>
+            <FundShareButtons />
         </div>
     </article>
   )
