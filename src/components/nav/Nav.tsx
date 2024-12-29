@@ -1,6 +1,6 @@
 "use client";
 
-//import { useState } from "react";
+import { useState } from "react";
 //import Navbar from "../navbar/Navbar";
 import "./nav.css";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -9,9 +9,9 @@ import Brand from "../brand/Brand";
 
 
 const Nav = () => {
-  //const [barIsOpen, setBarIsOpen] = useState(false);
+  const [barIsOpen, setBarIsOpen] = useState(false);
 
-//   const openBar = () => setBarIsOpen(true);
+  const openBar = () => setBarIsOpen(true);
 //   const closeBar = () => setBarIsOpen(false);
 
   return (
@@ -20,7 +20,7 @@ const Nav = () => {
         <Brand />
         <div>
           <button>Connect wallet</button>
-          <Icon icon={MenuIcon} />
+          <Icon icon={MenuIcon} onClick={openBar} />
         </div>
       </nav>
       {/* {barIsOpen && <Navbar closeBar={closeBar} />} */}

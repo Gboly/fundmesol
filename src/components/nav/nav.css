@@ -1,6 +1,6 @@
 nav {
     width: 100%;
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem 1rem 3rem;
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@ nav {
 } */
 nav > div:last-of-type {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
 }
 nav button {
@@ -37,7 +37,7 @@ nav i {
 
 @media screen and (max-width: 720px) {
     nav {
-        padding: 1rem;
+        padding: 1rem .5rem 1rem 1rem;
     }
 }
 @media screen and (max-width: 560px) {
